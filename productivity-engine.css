@@ -1,0 +1,193 @@
+/* ===================================
+   PRODUCTIVITY ENGINE SECTION
+   =================================== */
+
+.productivity-engine-section {
+  background: #ffffff;
+  padding: 0 20px 0 0px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.productivity-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+/* Main Content */
+.productivity-content {
+  max-width: 900px;
+}
+
+/* Title Header */
+.productivity-header {
+  margin-bottom: 20px;
+}
+
+.productivity-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #126387;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
+}
+
+/* Blue Underline under Title */
+.productivity-underline {
+  width: 60px !important;
+  height: 2px;
+  background: #5ABCF9;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  
+  /* Initial slide in, then continuous shimmer */
+  animation: slideInUnderline 0.8s ease-out forwards;
+}
+
+.productivity-underline::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  animation: shimmerEffect 2s ease-in-out 1s infinite;
+}
+
+@keyframes slideInUnderline {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 60px;
+    opacity: 1;
+  }
+}
+
+@keyframes shimmerEffect {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+/* Description Paragraphs */
+/* .productivity-description {
+  margin-bottom: 60px;
+} */
+
+.productivity-description p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.productivity-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Testimonial Heading */
+.testimonial-header {
+  margin-top: 20px;
+}
+
+.testimonial-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a5f7a;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .productivity-container {
+    padding: 0 60px;
+  }
+
+  .productivity-title {
+    font-size: 2.2rem;
+  }
+
+  .testimonial-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .productivity-container {
+    padding: 0 50px;
+  }
+
+  .productivity-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-title {
+    font-size: 1.8rem;
+  }
+
+  .productivity-description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .productivity-engine-section {
+    padding: 70px 0 60px;
+  }
+
+  .productivity-container {
+    padding: 0 30px;
+  }
+
+  .productivity-title {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-title {
+    font-size: 1.6rem;
+  }
+
+  .productivity-description p {
+    font-size: 0.98rem;
+  }
+
+  .testimonial-header {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productivity-title {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-title {
+    font-size: 1.4rem;
+  }
+
+  .productivity-description p {
+    font-size: 0.95rem;
+  }
+
+  .productivity-underline {
+    width: 50px;
+    height: 3px;
+  }
+}

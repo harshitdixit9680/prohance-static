@@ -1,0 +1,451 @@
+/* ===================================
+   SUCCESS STORIES SECTION
+   =================================== */
+
+.success-stories-section {
+  background: #ffffff;
+  padding: 80px 0 50px;
+  position: relative;
+}
+
+.success-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+/* Header Section */
+.success-header {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 0% !important;
+}
+
+
+.header-with-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Title line on LEFT side */
+.title-line {
+  width: 100px;
+  height: 2px;
+  background: #000000;
+  flex-shrink: 0;
+}
+
+.header-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #126387;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.3px;
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  /* Outline text effect - light gray outline */
+  color: transparent;
+  -webkit-text-stroke: 2.5px #126387;
+  text-stroke: 2.5px #d5d5d5;
+  paint-order: stroke fill;
+}
+
+/* Line extending to the RIGHT of "SUCCESS STORIES" */
+.title-line-right {
+  flex: 1;
+  height: 2px;
+  background: #000000;
+  margin-left: 0;
+}
+
+/* ============================================
+   STORIES GRID & CARD SECTION - UPDATED
+   ============================================ */
+
+/* Stories Grid */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin-bottom: 80px;
+  padding: 0 5%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Story Card */
+.story-card {
+  background: #ffffff;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Metric Value - Large Blue Number */
+.metric-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5DADE2;
+  line-height: 0.85;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
+}
+/* Remove or comment out any existing .metric-value styles */
+
+.metric-value1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  /* margin-bottom: 7px; */
+  display: inline-block;
+  position: relative;
+  
+  /* Solid color as base */
+  color: #5ABCF9;
+  
+  /* Gradient overlay */
+  background: linear-gradient(90deg, #5ABCF9 0%, #6CEA7E 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* For better rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Blue Underline Bar - Also with gradient */
+.metric-underline {
+  width: 55px;
+  height: 4px;
+  background: linear-gradient(90deg, #5ABCF9 0%, #6CEA7E 100%);
+  margin-bottom: 35px;
+  border-radius: 0;
+}
+
+/* Metric Label - Text below the number */
+.metric-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Blue Underline Bar */
+.metric-underline {
+  width: 55px;
+  height: 4px;
+  background: #5DADE2;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+/* Company Title - Bold Black */
+.company-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0px;
+  line-height: 1.6;
+}
+
+/* Company Subtitle - License info */
+.company-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Company Description - Regular text */
+.company-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* CTA Container */
+.cta-container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 5%;
+  position: relative;
+}
+
+/* CTA Wrapper - Contains button and lines */
+.cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Border Line */
+.cta-line-left {
+  flex: 1;
+  height: 2px;
+  background: #d0d0d0;
+  /* margin-right: 40px; */
+      bottom: -34px;
+            position: relative;
+}
+
+/* Right Border Line */
+.cta-line-right {
+  flex: 1;
+  height: 2px;
+  background: #d0d0d0;
+  /* margin-left: 40px; */
+      bottom: -34px;
+      position: relative;
+}
+
+/* CTA Button */
+.cta-button {
+  background: linear-gradient(90deg, #7CFC00 0%, #6CEA7E 100%);
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 22px 65px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(124, 252, 0, 0.3);
+  display: inline-block;
+  line-height: 1.6;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(124, 252, 0, 0.5);
+  background: linear-gradient(90deg, #90FF1A 0%, #3FD43F 100%);
+}
+
+/* Button Active State */
+.cta-button:active {
+  transform: translateY(-2px) scale(1);
+  box-shadow: 0 6px 22px rgba(124, 252, 0, 0.4);
+}
+
+/* Ripple Effect on Hover */
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Button Text Styling */
+.cta-text {
+  display: inline;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-button strong {
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .cta-wrapper {
+    gap: 0;
+  }
+
+  .cta-line-left {
+    margin-right: 30px;
+  }
+
+  .cta-line-right {
+    margin-left: 30px;
+  }
+
+  .cta-button {
+    padding: 20px 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-line-left,
+  .cta-line-right {
+    display: none;
+  }
+
+  .cta-wrapper {
+    justify-content: center;
+  }
+
+  .cta-button {
+    padding: 20px 40px;
+    font-size: 1rem;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-button {
+    padding: 18px 35px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive Updates for Cards */
+@media (max-width: 1400px) {
+  .stories-grid {
+    gap: 80px;
+    padding: 0 4%;
+  }
+
+  .metric-value {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .stories-grid {
+    gap: 70px;
+    padding: 0 3%;
+  }
+
+  .metric-value {
+    font-size: 5rem;
+  }
+
+  .company-title,
+  .company-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .company-description {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .stories-grid {
+    grid-template-columns: 1fr;
+    gap: 70px;
+    padding: 0 5%;
+  }
+
+  .metric-value {
+    font-size: 5rem;
+  }
+
+  .cta-container {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stories-grid {
+    gap: 60px;
+  }
+
+  .metric-value {
+    font-size: 4.5rem;
+  }
+
+  .company-title,
+  .company-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .company-description {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    padding: 20px 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .metric-value {
+    font-size: 3.8rem;
+    letter-spacing: -1px;
+  }
+
+  .company-title,
+  .company-subtitle {
+    font-size: 1rem;
+  }
+
+  .company-description {
+    font-size: 0.92rem;
+  }
+
+  .metric-underline {
+    width: 50px;
+    height: 3px;
+  }
+
+  .cta-button {
+    padding: 18px 40px;
+    font-size: 0.95rem;
+  }
+
+  .stories-grid {
+    gap: 50px;
+  }
+}

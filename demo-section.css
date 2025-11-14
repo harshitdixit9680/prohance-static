@@ -1,0 +1,364 @@
+/* ===================================
+   DEMO BOOKING SECTION
+   =================================== */
+
+.demo-section {
+  background: linear-gradient(135deg, #1a5f7a 0%, #16556d 100%);
+  padding: 100px 0;
+  position: relative;
+}
+
+.demo-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ========== LEFT SIDE - CTA ========== */
+.demo-left {
+  flex: 0 0 45%;
+  color: #ffffff;
+}
+
+.demo-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  line-height: 1.6;
+}
+
+.demo-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px !important;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  line-height: 16px;
+}
+
+.highlight-green {
+  color: #6CEA7E;
+  display: block;
+}
+
+.demo-cta-button {
+  background: #ffffff;
+  color: #1a5f7a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.demo-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: #f5f5f5;
+}
+
+/* ========== RIGHT SIDE - FORM ========== */
+.demo-right {
+  flex: 0 0 50%;
+}
+
+.demo-form-card {
+  background: #ffffff;
+  padding: 40px 45px 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 30px 0;
+  line-height: 1.4;
+}
+
+/* Form Styling */
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #1a5f7a;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(26, 95, 122, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Phone Input */
+.phone-input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.country-code {
+  flex: 0 0 80px;
+}
+
+.phone-input-wrapper input {
+  flex: 1;
+}
+
+/* Privacy Text */
+.privacy-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #666666;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.privacy-link {
+  color: #1a5f7a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.privacy-link:hover {
+  color: #5DADE2;
+}
+
+/* reCAPTCHA Wrapper */
+.recaptcha-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+/* Submit Button */
+.submit-button {
+  background: linear-gradient(90deg, #FF5733 0%, #FF4520 100%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 87, 51, 0.3);
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 87, 51, 0.5);
+  background: linear-gradient(90deg, #FF6B47 0%, #FF5530 100%);
+}
+
+.submit-button:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .demo-container {
+    padding: 0 60px;
+    gap: 60px;
+  }
+
+  .demo-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .demo-container {
+    padding: 0 50px;
+    gap: 50px;
+  }
+
+  .demo-left {
+    flex: 0 0 42%;
+  }
+
+  .demo-heading {
+    font-size: 1.8rem;
+  }
+
+  .demo-form-card {
+    padding: 35px 40px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .demo-section {
+    padding: 70px 0;
+  }
+
+  .demo-container {
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 50px;
+  }
+
+  .demo-left,
+  .demo-right {
+    flex: 0 0 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .demo-left {
+    text-align: center;
+  }
+
+  .demo-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .demo-container {
+    padding: 0 30px;
+  }
+
+  .demo-tagline {
+    font-size: 1rem;
+  }
+
+  .demo-heading {
+    font-size: 1.6rem;
+  }
+
+  .demo-form-card {
+    padding: 30px 25px 35px;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .demo-cta-button {
+    padding: 16px 40px;
+    font-size: 1.05rem;
+  }
+
+  .submit-button {
+    padding: 14px 35px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .demo-section {
+    padding: 50px 0;
+  }
+
+  .demo-container {
+    padding: 0 20px;
+  }
+
+  .demo-tagline {
+    font-size: 0.95rem;
+  }
+
+  .demo-heading {
+    font-size: 1.4rem;
+  }
+
+  .demo-form-card {
+    padding: 25px 20px 30px;
+  }
+
+  .form-title {
+    font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
+
+/* reCAPTCHA Styling */
+.recaptcha-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.g-recaptcha {
+  transform: scale(0.95);
+  transform-origin: 0 0;
+}
+
+/* reCAPTCHA Badge Styling */
+.grecaptcha-badge {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Responsive reCAPTCHA */
+@media (max-width: 480px) {
+  .g-recaptcha {
+    transform: scale(0.85);
+  }
+}
