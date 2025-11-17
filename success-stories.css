@@ -32,9 +32,11 @@
 /* Title line on LEFT side */
 .title-line {
   width: 100px;
-  height: 2px;
+  height: 1px;
   background: #000000;
   flex-shrink: 0;
+  position: relative;
+  bottom: -17px;
 }
 
 .header-content {
@@ -59,7 +61,7 @@ font-family: 'Montserrat';
 
 .section-title {
   font-family: 'Montserrat';
-  font-size: 3.5rem;
+  font-size: 40px;
   font-weight: 700;
   margin: 0;
   line-height: 1.1;
@@ -69,7 +71,7 @@ font-family: 'Montserrat';
   flex-shrink: 0;
   /* Outline text effect - light gray outline */
   color: transparent;
-  -webkit-text-stroke: 2.5px #126387;
+  -webkit-text-stroke: 2.5px #5ABCF9;
   text-stroke: 2.5px #d5d5d5;
   paint-order: stroke fill;
 }
@@ -77,9 +79,11 @@ font-family: 'Montserrat';
 /* Line extending to the RIGHT of "SUCCESS STORIES" */
 .title-line-right {
   flex: 1;
-  height: 2px;
+  height: 1px;
   background: #000000;
   margin-left: 0;
+  position: relative;
+  bottom: -17px;
 }
 
 /* ============================================

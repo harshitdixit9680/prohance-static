@@ -68,7 +68,7 @@
 
     .left-section h1 {
       font-weight: 700;
-      font-size: 2.8rem;
+      font-size: 32px;
       line-height: 1.3;
       margin-bottom: 2rem;
       color: #ffffff;
@@ -125,14 +125,14 @@
        font-family: 'Montserrat';
       color: #6CEA7E;
       font-weight: 600;
-      font-size: 1.5rem;
+      font-size: 22px;
       margin-bottom: 2.5rem;
       line-height: 1.4;
     }
 
     .left-section p {
       color: #e0e0e0;
-      font-size: 1.05rem;
+      font-size:20px;
       line-height: 1.8;
       margin-bottom: 1.5rem;
       font-weight: 400;
@@ -214,7 +214,7 @@
     .accordion-body {
       background-color: transparent;
       color: #d9d9d9;
-      font-size: 0.92rem;
+      font-size: 15px;
       padding: 10px 0 24px 0;
       line-height: 1.7;
     }
