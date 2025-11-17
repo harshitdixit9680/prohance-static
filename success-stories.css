@@ -31,7 +31,7 @@
 
 /* Title line on LEFT side */
 .title-line {
-  width: 100px;
+  width: 58px;
   height: 1px;
   background: #000000;
   flex-shrink: 0;
@@ -69,12 +69,13 @@ font-family: 'Montserrat';
   letter-spacing: 2px;
   white-space: nowrap;
   flex-shrink: 0;
-  /* Outline text effect - light gray outline */
-  color: transparent;
-  -webkit-text-stroke: 2.5px #5ABCF9;
-  text-stroke: 2.5px #d5d5d5;
+
+  /* Outline + fill */
+  color: #ffffff;                /* Fill color like 2nd image */
+  -webkit-text-stroke: 2.5px #126387;   /* Blue outline */
   paint-order: stroke fill;
 }
+
 
 /* Line extending to the RIGHT of "SUCCESS STORIES" */
 .title-line-right {
