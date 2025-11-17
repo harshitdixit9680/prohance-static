@@ -8,7 +8,7 @@
         <div class="title-line"></div>
         <div class="header-content">
           <p class="section-subtitle">ProHance IT Industry</p>
-          <h2 class="section-title">SUCCESS STORIES</h2>
+          <h2 class="section-title">Successs Stories</h2>
           <div class="title-line-right"></div>
         </div>
       </div>

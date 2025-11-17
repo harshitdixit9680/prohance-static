@@ -65,14 +65,15 @@ font-family: 'Montserrat';
   font-weight: 700;
   margin: 0;
   line-height: 1.1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
   white-space: nowrap;
   flex-shrink: 0;
+text-shadow: 0 0 5px #126387;
 
   /* Outline + fill */
   color: #ffffff;                /* Fill color like 2nd image */
-  -webkit-text-stroke: 2.5px #126387;   /* Blue outline */
+  -webkit-text-stroke: 1.5px #126387;   /* Blue outline */
   paint-order: stroke fill;
 }
 
