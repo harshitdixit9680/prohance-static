@@ -31,7 +31,7 @@
 
       <!-- Story Card 2 -->
       <div class="story-card">
-        <div class="metric-value">28%</div>
+        <div class="metric-value1">28%</div>
         <div class="metric-label">more utilization in 6 months</div>
         <div class="metric-underline"></div>
         <div class="company-title">Mid-Tier IT Company:</div>
@@ -42,7 +42,7 @@
 
       <!-- Story Card 3 -->
       <div class="story-card">
-        <div class="metric-value">23%</div>
+        <div class="metric-value1">23%</div>
         <div class="metric-label">higher productive time</div>
         <div class="metric-underline"></div>
         <div class="company-title">Tech Giant (2,000+ FTEs):</div>

@@ -7,7 +7,7 @@
       
       <!-- Title with Underline -->
       <div class="productivity-header">
-        <h2 class="productivity-title">The Productivity Engine<br>for IT Enterprises</h2>
+        <h2 class="productivity-title">The Productivity Engine for IT Enterprises</h2>
         <div class="productivity-underline"></div>
       </div>
 
@@ -26,7 +26,7 @@
 
       <!-- Client Testimonial Heading -->
       <div class="testimonial-header">
-        <h3 class="testimonial-title">Client<br>Testimoniel</h3>
+        <h3 class="testimonial-title">Client<br>Testimonial</h3>
       </div>
 
     </div>

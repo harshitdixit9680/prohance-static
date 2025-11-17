@@ -1,9 +1,16 @@
-document.querySelectorAll(".accordion-title").forEach((title) => {
-  title.addEventListener("click", () => {
-    const parent = title.parentElement;
-    document.querySelectorAll(".accordion-item").forEach((item) => {
-      if (item !== parent) item.classList.remove("active");
-    });
-    parent.classList.toggle("active");
+
+document.querySelectorAll('.accordion-button').forEach(button => {
+  button.addEventListener('click', function () {
+    const icon = this.querySelector('.icon');
+
+    setTimeout(() => {
+      if (this.classList.contains('collapsed')) {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+      } else {
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    }, 200);
   });
 });

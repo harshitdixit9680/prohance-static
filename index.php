@@ -11,6 +11,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="success-stories.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Productivity Engine Styles -->
   <link rel="stylesheet" href="productivity-engine.css">
   <link rel="stylesheet" href="demo-section.css">
@@ -22,7 +24,7 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: #333;
       overflow-x: hidden;
     }
@@ -181,11 +183,24 @@
       box-shadow: none;
     }
 
-    .accordion-button::after {
-      filter: brightness(0) invert(1);
-      position: absolute;
-      right: 0;
-    }
+   /* Remove Bootstrap's default arrow */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Custom icon */
+.accordion-button .icon {
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Change icon when opened */
+.accordion-button:not(.collapsed) .icon {
+  content: "\f068"; /* Minus */
+}
+
 
     .accordion-button:focus {
       box-shadow: none;
@@ -284,6 +299,23 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
   grecaptcha.reset();
 });
 </script>
+<script>
+let index = 0;
+const slider = document.querySelector(".testimonial-slider");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide() {
+  index++;
+  if (index > 2) index = 0;
+
+  slider.style.transform = `translateX(-${index * 100}%)`;
+
+  dots.forEach(d => d.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+setInterval(showSlide, 3000); // Auto scroll every 3 sec
+</script>
 
 </head>
 <body>
@@ -306,9 +338,11 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
           
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                Deep Visibility into Developer Workflows
-              </button>
+             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+    Deep Visibility into Developer Workflows
+    <i class="fa-solid fa-plus icon"></i>
+</button>
+
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="accordion-body">
@@ -326,6 +360,8 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
                 Real-Time Project Intelligence (JIRA Productivity Tracking)
+                 <i class="fa-solid fa-plus icon"></i>
+
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -339,6 +375,8 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
                 Smarter Resource Allocation & IT Capacity Planning
+                 <i class="fa-solid fa-plus icon"></i>
+
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -352,6 +390,8 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
                 Data-Driven Developer Productivity Analytics
+                 <i class="fa-solid fa-plus icon"></i>
+
               </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -365,6 +405,8 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
                 Minimize Context Switching & Maximize Focus
+                 <i class="fa-solid fa-plus icon"></i>
+
               </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -378,6 +420,8 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
                 Enable Workforce Learning & Upskilling
+                 <i class="fa-solid fa-plus icon"></i>
+
               </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -392,6 +436,23 @@ document.getElementById('demoForm').addEventListener('submit', function(e) {
 
     </div>
   </section>
+<script>
+document.querySelectorAll('.accordion-button').forEach(button => {
+  button.addEventListener('click', function () {
+    const icon = this.querySelector('.icon');
+
+    setTimeout(() => {
+      if (this.classList.contains('collapsed')) {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+      } else {
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    }, 200);
+  });
+});
+</script>
 
   <!-- INCLUDE SUCCESS STORIES SECTION -->
   <?php include 'success-stories.php'; ?>
