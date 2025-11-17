@@ -24,7 +24,7 @@
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat';
       color: #333;
       overflow-x: hidden;
     }
@@ -40,7 +40,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
+      /* background: rgba(0, 0, 0, 0.7); */
       backdrop-filter: blur(8px);
       z-index: 0;
     }
