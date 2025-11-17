@@ -46,7 +46,7 @@
 }
 
 .section-subtitle {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 0.95rem;
   color: #126387;
   font-weight: 400;
@@ -109,7 +109,7 @@
 
 /* Metric Value - Large Blue Number */
 .metric-value {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -120,7 +120,7 @@
 /* Remove or comment out any existing .metric-value styles */
 
 .metric-value1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat';
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -155,7 +155,7 @@
 
 /* Metric Label - Text below the number */
 .metric-label {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.05rem;
   color: #000000;
   font-weight: 400;
@@ -174,7 +174,7 @@
 
 /* Company Title - Bold Black */
 .company-title {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.1rem;
   font-weight: 700;
   color: #000000;
@@ -184,7 +184,7 @@
 
 /* Company Subtitle - License info */
 .company-subtitle {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.1rem;
   font-weight: 700;
   color: #000000;
@@ -194,7 +194,7 @@
 
 /* Company Description - Regular text */
 .company-description {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1rem;
   color: #333333;
   line-height: 1.8;
@@ -243,7 +243,7 @@
 .cta-button {
   background: linear-gradient(90deg, #7CFC00 0%, #6CEA7E 100%);
   color: #000000;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat';
   font-size: 1.1rem;
   font-weight: 600;
   padding: 22px 65px;

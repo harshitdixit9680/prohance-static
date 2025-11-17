@@ -24,7 +24,7 @@
 }
 
 .demo-tagline {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.15rem;
   color: #ffffff;
   font-weight: 400;
@@ -33,7 +33,7 @@
 }
 
 .demo-heading {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 20px !important;
   font-weight: 600;
   margin: 0 0 40px 0;
@@ -48,7 +48,7 @@
 .demo-cta-button {
   background: #ffffff;
   color: #1a5f7a;
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.15rem;
   font-weight: 600;
   padding: 18px 50px;
@@ -78,7 +78,7 @@
 }
 
 .form-title {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.5rem;
   font-weight: 700;
   color: #000000;
@@ -110,7 +110,7 @@
 }
 
 .form-group label {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 0.9rem;
   color: #333333;
   font-weight: 500;
@@ -120,7 +120,7 @@
 .form-group input,
 .form-group textarea,
 .form-group select {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 0.95rem;
   padding: 12px 15px;
   border: 1px solid #d0d0d0;
@@ -159,7 +159,7 @@
 
 /* Privacy Text */
 .privacy-text {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 0.85rem;
   color: #666666;
   line-height: 1.6;
@@ -187,7 +187,7 @@
 .submit-button {
   background: linear-gradient(90deg, #FF5733 0%, #FF4520 100%);
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.1rem;
   font-weight: 600;
   padding: 16px 40px;

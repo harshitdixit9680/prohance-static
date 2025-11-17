@@ -16,7 +16,7 @@
       background: linear-gradient(135deg, #E3F2F7 0%, #D0E8F0 100%);
       padding: 80px 0;
       position: relative;
-      font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
     }
 
     .testimonial-viewport {
@@ -66,7 +66,7 @@
     }
 
     .testimonial-text {
-      font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
       font-size: 1.05rem;
       color: #000000;
       line-height: 1.9;

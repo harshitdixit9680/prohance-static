@@ -19,7 +19,7 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
       color: #333;
       overflow-x: hidden;
     }

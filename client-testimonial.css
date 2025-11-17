@@ -62,7 +62,7 @@
 }
 
 .author-name {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
@@ -71,7 +71,7 @@
 }
 
 .author-position {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 0.95rem;
   color: #666666;
   font-weight: 400;
@@ -93,7 +93,7 @@
 }
 
 .testimonial-text {
-  font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat';
   font-size: 1.05rem;
   color: #000000;
   line-height: 1.9;

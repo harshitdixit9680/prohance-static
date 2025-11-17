@@ -24,7 +24,7 @@
     }
 
     body {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat' !important;
       color: #333;
       overflow-x: hidden;
     }
