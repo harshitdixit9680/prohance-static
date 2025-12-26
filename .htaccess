@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /prohance/
+    
+    # Don't rewrite if the request is for an actual file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Don't rewrite if it's already pointing to index.php
+    RewriteCond %{REQUEST_URI} !/index.php
+    
+    # For requests that don't match a real file/directory, you can add routing here if needed
+    # RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+</IfModule>
+
+# Add proper MIME types for WebP and PCX
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+    AddType image/x-pcx .pcx
+</IfModule>

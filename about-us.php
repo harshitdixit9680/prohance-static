@@ -1,15 +1,14 @@
 <?php
-define("NITROPACK_HOME_URL", "https://www.prohance.ai");
-define("NITROPACK_SITE_ID", "AAMaEwwRTYDGHepNsnqHOmPbisuKHYIN");
-define("NITROPACK_SITE_SECRET", "PVA44WV9iNtNM6YDr5L7a1b1yFXHqVU11LujLekzkZHe0jMCr1ACxgEWUVJtG6bI");
-
-require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
+// NitroPack SDK - disabled for Docker environment
+// define("NITROPACK_HOME_URL", "https://www.prohance.ai");
+// define("NITROPACK_SITE_ID", "AAMaEwwRTYDGHepNsnqHOmPbisuKHYIN");
+// define("NITROPACK_SITE_SECRET", "PVA44WV9iNtNM6YDr5L7a1b1yFXHqVU11LujLekzkZHe0jMCr1ACxgEWUVJtG6bI");
+// require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <base href="/prohance/">
     <?php include 'inc/head-tag-inc.php'; ?>
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -1065,7 +1064,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
 </head>
 
 <body>
-    <?php include 'header.php'; ?>
     <!-- Hero Section -->
     <section class="about-hero">
         <div class="container text-center">
@@ -1587,8 +1585,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
     </section>
 
 
-
-    <?php include 'footer.php'; ?>
     <script src="https://www.prohance.ai/js/mainjs.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

@@ -54,11 +54,11 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'true') {
 }
 ?>
 <?php
-define("NITROPACK_HOME_URL", "https://www.prohance.ai");
-define("NITROPACK_SITE_ID", "AAMaEwwRTYDGHepNsnqHOmPbisuKHYIN");
-define("NITROPACK_SITE_SECRET", "PVA44WV9iNtNM6YDr5L7a1b1yFXHqVU11LujLekzkZHe0jMCr1ACxgEWUVJtG6bI");
-
-require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
+// NitroPack SDK - disabled for Docker environment
+// define("NITROPACK_HOME_URL", "https://www.prohance.ai");
+// define("NITROPACK_SITE_ID", "AAMaEwwRTYDGHepNsnqHOmPbisuKHYIN");
+// define("NITROPACK_SITE_SECRET", "PVA44WV9iNtNM6YDr5L7a1b1yFXHqVU11LujLekzkZHe0jMCr1ACxgEWUVJtG6bI");
+// require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
 ?>
 
 <!doctype html>
@@ -989,7 +989,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
 </head>
 
 <body class="inner-pages events">
-    <?php include 'header.php'; ?>
+
     <section class="events-hero">
         <div class="container-1360-wrp">
             <p class="events-kicker">ProHance Events</p>
@@ -1248,7 +1248,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/nitropack-sdk/bootstrap.php";
 
 
     </script>
-    <?php include 'footer.php'; ?>
+ 
     <!-- Bootstrap core JavaScript
          ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

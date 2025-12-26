@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  prohance-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
+    volumes:
+      - .:/var/www/html
+    container_name: prohance-static-web
+    networks:
+      - prohance-net
+
+  # Optional: MySQL database container (if needed)
+  prohance-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: phnewweb
+      MYSQL_USER: phnewuser
+      MYSQL_PASSWORD: 218.Pt(hFa787FBAS
+    ports:
+      - "3307:3306"
+    volumes:
+      - prohance-db-data:/var/lib/mysql
+    container_name: prohance-mysql
+    networks:
+      - prohance-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  prohance-net:
+    driver: bridge
+
+volumes:
+  prohance-db-data:
