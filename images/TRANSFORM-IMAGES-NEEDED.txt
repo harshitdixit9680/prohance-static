@@ -1,0 +1,28 @@
+TRANSFORM SECTION - IMAGE FILES NEEDED IN THE images/ FOLDER:
+
+Please add the following image files for the Transform section cards:
+
+1. card-workforce-realtime.jpg
+   - Image showing a performance dashboard/analytics screen
+   - Card title: "See Your Workforce in Real Time"
+
+2. card-data-action.jpg
+   - Image showing data visualization/charts with hands interacting
+   - Card title: "Turn Data into Action"
+
+3. card-optimize-process.jpg
+   - Image showing technology/gears/automation concept
+   - Card title: "Optimize Every Process, End to End"
+
+Recommended specifications:
+- Format: JPG or PNG
+- Dimensions: 600x800px minimum (portrait orientation)
+- Resolution: High quality for retina displays
+- Aspect ratio: 3:4 or similar portrait format
+- File size: Optimized for web (under 500KB each)
+
+Note: Images should have good contrast as white text will overlay them.
+The bottom portion of each image should be suitable for text overlay with a dark gradient.
+
+
+
